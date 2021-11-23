@@ -48,7 +48,9 @@ function chekBoxes() {
             example.classList.add('show');
         } else {
             example.classList.remove('show');
-            example.classList.remove('ActiveExampleContainer');
+            if (example.classList.contains('ActiveExampleContainer')) {
+                example.classList.remove('ActiveExampleContainer');
+            }
         }
     });
 }
