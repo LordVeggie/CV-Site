@@ -11,15 +11,36 @@ const examples = document.querySelectorAll('.Example');
 examples.forEach((example) => {
     example.addEventListener('click', () => {
         SwithchExampleContainerActive(example);
+
+        chekBoxes();
     });
 });
 
 function SwithchExampleContainerActive(example) {
     if (!example.classList.contains('ActiveExampleContainer')) {
-        //example.classList.remove('ExampleContainer');
         example.classList.add('ActiveExampleContainer');
     } else {
         example.classList.remove('ActiveExampleContainer');
-        //example.classList.add('ExampleContainer');
     }
+}
+
+//showing examples as we scrowl down
+
+window.addEventListener('scroll', chekBoxes);
+
+chekBoxes();
+
+function chekBoxes() {
+    const triggerPoint = (window.innerHeight / 5) * 4;
+
+    examples.forEach((example) => {
+        const exampleTop = example.getBoundingClientRect().top;
+
+        if (exampleTop < triggerPoint) {
+            example.classList.add('show');
+        } else {
+            example.classList.remove('show');
+            example.classList.remove('ActiveExampleContainer');
+        }
+    });
 }

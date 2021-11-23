@@ -3,7 +3,6 @@
 
 .Example {
     /* use this as marker that this is a example do not ever remove this class */
-    transition: all 1s linear;
     background-color: yellow;
     border-radius: 1rem;
     border-top-left-radius: 1.5rem;
@@ -12,10 +11,20 @@
     margin: 1rem;
     margin-top: 2rem;
     cursor: pointer;
+    transform: translateX(200%);
+}
+
+.Example:nth-last-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.Example.show {
+    transform: translateX(0);
 }
 
 .ExampleContainer {
-    transition: all 1s linear;
+    transition: width 0.5s linear, height 0.5s linear;
+    transition: transform 0.4s ease-out;
     width: 50%;
     height: 20vh;
     min-width: 20rem;
@@ -27,7 +36,8 @@
 }
 
 .ActiveExampleContainer {
-    transition: all 1s linear;
+    transition: width 0.5s linear, height 0.5s linear;
+    transition: transform 0.4s ease-out;
     background-color: orange;
     width: 100vw;
     height: 90vh;
