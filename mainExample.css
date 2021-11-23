@@ -2,8 +2,8 @@
 /* use this as the bais for all example css pages so hover and click responce */
 
 .ExampleContainer {
-  width: 10rem;
-  height: 5rem;
+  width: 100rem;
+  height: 50rem;
   background-color: yellow;
   border-radius: 1rem;
   border-top-left-radius: 1.5rem;
