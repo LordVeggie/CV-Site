@@ -1,104 +1,114 @@
 /*this will be the css of the page it self*/
 
 :root {
-  box-sizing: border-box;
-  background-color: #111a24;
-  font-size: 10px;
-  margin: 0;
+    box-sizing: border-box;
+    background-color: #111a24;
+    font-size: 10px;
+    margin: 0;
 
-  animation-duration: 30s;
-  animation-name: backgroundOfPage;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
+    animation-duration: 30s;
+    animation-name: backgroundOfPage;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    overflow-y: scroll;
 }
 
 @keyframes backgroundOfPage {
-  /*should be a snowflake background*/
-  from {
-    background-color: #111a24;
-  }
-  to {
-    background-color: pink;
-  }
+    /*should be a snowflake background*/
+    from {
+        background-color: #111a24;
+    }
+    to {
+        background-color: pink;
+    }
 }
 
 * {
-  box-sizing: border-box;
-  font-size: sans-serif, Arial;
-  margin: 0;
-  padding: 0;
-  color: #ff652f;
+    box-sizing: border-box;
+    font-size: sans-serif, Arial;
+    margin: 0;
+    padding: 0;
+    color: #ff652f;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 4.5rem;
-  color: #ffe400;
-  margin-bottom: 5rem;
+    font-size: 4.5rem;
+    color: #ffe400;
+    margin-bottom: 5rem;
 }
 
 h1 > span {
-  font-size: 2.4rem;
-  font-weight: 500;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 
 h2 {
-  font-size: 4.2rem;
-  margin-bottom: 4rem;
-  font-weight: 700;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
 }
 
 h3 {
-  font-size: 2.8rem;
-  font-weight: 500;
+    font-size: 2.8rem;
+    font-weight: 500;
 }
 
 /* only page it self */
+.ExamplesContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
 
 /* page it self and can be used for other elements of the page centering in a element would be an example*/
 
 .flex-center-column {
-  /*column*/
-  display: flex;
-  flex-direction: column;
+    /*column*/
+    display: flex;
+    flex-direction: column;
 
-  /*center*/
-  justify-content: center;
-  align-items: center;
+    /*center*/
+    justify-content: center;
+    align-items: center;
 }
 
 .flex-row {
-  /*column*/
-  display: flex;
-  flex-direction: row;
-  /*center*/
-  justify-content: start;
+    /*column*/
+    display: flex;
+    flex-direction: row;
+    /*center*/
+    justify-content: start;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-center {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .justify-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }

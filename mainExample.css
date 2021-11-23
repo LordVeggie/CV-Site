@@ -1,16 +1,39 @@
 /* This will contain the main css for all example pages hosted in on the main page */
 /* use this as the bais for all example css pages so hover and click responce */
 
+.Example {
+    /* use this as marker that this is a example do not ever remove this class */
+    transition: all 0.6s linear;
+    background-color: yellow;
+    border-radius: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 .ExampleContainer {
-  width: 100rem;
-  height: 50rem;
-  background-color: yellow;
-  border-radius: 1rem;
-  border-top-left-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
-  padding: 1rem;
+    transition: all 0.6s linear;
+    width: 40%;
+    height: 10vh;
+    min-width: 20rem;
 }
 
 .ExampleContainer:hover {
-  background-color: aqua;
+    background-color: aqua;
+    width: 42%;
+}
+
+.ActiveExampleContainer {
+    transition: all 0.6s linear;
+    background-color: orange;
+    width: 100vw;
+    height: 90vh;
+}
+
+.ActiveExampleContainer.ExampleContainer:hover {
+    background-color: aqua;
+    width: 100vw;
 }
