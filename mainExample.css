@@ -71,6 +71,7 @@
     background-color: white;
     opacity: 0;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .ActiveExampleContainer .showExamplePageBody {

@@ -10,7 +10,6 @@ const examplePageBodys = document.querySelectorAll('.ExamplePageBody');
 examples.forEach((example, index) => {
     example.addEventListener('click', () => {
         SwithchExampleContainerActive(example, index);
-        console.log(index);
     });
 });
 
@@ -27,9 +26,11 @@ function SwithchExampleContainerActive(example, index) {
         example.classList.add('ActiveExampleContainer');
     } else {
         example.classList.remove('ActiveExampleContainer');
+        setTimeout(function () {
+            chekBoxes();
+        }, 510);
     }
     examplePageBodySizeChange(index);
-    console.log(index);
 }
 
 //showing examples as we scrowl down
@@ -44,6 +45,8 @@ function chekBoxes() {
     examples.forEach((example) => {
         let exampleTop = example.getBoundingClientRect().top;
 
+        console.log(exampleTop);
+
         if (exampleTop < triggerPoint) {
             example.classList.add('show');
         } else {
@@ -51,6 +54,10 @@ function chekBoxes() {
             if (example.classList.contains('ActiveExampleContainer')) {
                 example.classList.remove('ActiveExampleContainer');
             }
+        }
+
+        if (exampleTop < -1000) {
+            example.classList.remove('ActiveExampleContainer');
         }
     });
 }
