@@ -67,15 +67,15 @@ h3 {
 {
     background-color: #5e5e5f;
     padding: 2rem;
-    width: 5rem;
-
+    width: 10rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-bottom-right-radius: 3rem;
     
-    transition: width 0.6s ease;
+    transition: all 0.6s ease;
 }
 
 .navcontainer.activeNav
@@ -89,7 +89,8 @@ h3 {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    transition: width 0.6 ease;
+    width: 0;
+    transition: all 0.6s ease;
 }
 
 .navcontainer.activeNav ul
@@ -101,13 +102,20 @@ h3 {
 {
     transform: scale(0);
     opacity: 0;
-    transition: scale 0.6s ease, opacity 0.6s ease;
+    transition: all 0.5s ease;
 }
 
 .navcontainer.activeNav ul li
 {
     opacity: 1;
     transform: scale(1);
+    transition-delay: 0.3s;
+    transition: all 0.5s ease;
+}
+
+.navcontainer.activeNav ul a:hover
+{
+    color: yellow;
 }
 
 nav ul a
@@ -116,14 +124,57 @@ nav ul a
     text-decoration: none;
     margin: 0 1rem;
     font-size: 2rem;
+    display: flex;
+    text-align: center;
+   
 }
 
 .navIcon
 {
     background-color: #5e5e5f;
-    
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    height: 3rem;
+    width: 3rem; 
+    transition: all 0.6s ease;
 }
 
+.navIcon:focus
+{
+    outline: none;
+}
+
+.navIcon .line
+{
+    background-color: #ff652f;
+    height: 0.2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    transition: transform 0.6 ease;
+}
+
+.navIcon:hover
+{
+    transform: scale(1.5);
+}
+
+.navIcon .line2
+{
+    top: auto;
+    bottom: 1rem;
+}
+
+.navcontainer.activeNav .navIcon .line1
+{
+    transform: rotate(-765deg) translateY(0.55rem);
+}
+
+.navcontainer.activeNav .navIcon .line2
+{
+    transform: rotate(765deg) translateY(-0.55rem);
+}
 
 .ExamplesContainer {
     display: flex;

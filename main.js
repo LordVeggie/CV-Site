@@ -4,8 +4,15 @@
 
 const examples = document.querySelectorAll('.Example');
 const examplePageBodys = document.querySelectorAll('.ExamplePageBody');
+const navToggel = document.querySelector('#navIcon');
+const navigationBar = document.querySelector('#navigationBar');
 
 //pages settup
+
+navToggel.addEventListener('click', function()
+{
+    navigationBar.classList.toggle('activeNav');
+});
 
 examples.forEach((example, index) => {
     example.addEventListener('click', () => {
