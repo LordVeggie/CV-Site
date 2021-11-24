@@ -31,7 +31,6 @@
 }
 
 .ExampleContainer:hover {
-    background-color: aqua;
     width: 52%;
 }
 
@@ -42,7 +41,6 @@
 }
 
 .ActiveExampleContainer.ExampleContainer:hover {
-    background-color: aqua;
     width: 100vw;
 }
 
@@ -58,6 +56,11 @@
     justify-content: center;
     align-items: center;
     transition: height 0.2s linear;
+}
+
+.ExamplePageHead:hover
+{
+    background-color: aqua;
 }
 
 .ActiveExampleContainer .ExamplePageHead {

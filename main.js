@@ -15,7 +15,11 @@ examples.forEach((example, index) => {
 
 examplePageBodys.forEach((examplePageBody) => {
     examplePageBody.classList.add('hidden');
+
 });
+
+
+
 
 //rest of the page java script
 
@@ -69,3 +73,6 @@ function examplePageBodySizeChange(index) {
         examplePageBodys.item(index).classList.remove('showExamplePageBody');
     }
 }
+
+//stop pages for srinking when clicking on exampel pages body
+
