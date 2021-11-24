@@ -55,10 +55,6 @@ function chekBoxes() {
                 example.classList.remove('ActiveExampleContainer');
             }
         }
-
-        if (exampleTop < -1000) {
-            example.classList.remove('ActiveExampleContainer');
-        }
     });
 }
 

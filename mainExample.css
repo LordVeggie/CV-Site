@@ -62,13 +62,14 @@
 
 .ActiveExampleContainer .ExamplePageHead {
     height: 3rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .ExamplePageBody {
     transition: opacity 0.5s ease;
     transition-delay: opacity 0.5s;
     width: 100%;
-    background-color: white;
     opacity: 0;
     overflow: scroll;
     overflow-x: hidden;
