@@ -62,9 +62,16 @@ h3 {
 }
 
 /* only page it self */
+.headOfPage
+{
+    display: block;
+    height: 10rem;
+}
 
 .navcontainer
 {
+    position: fixed;
+    z-index: 1000;
     background-color: #5e5e5f;
     padding: 2rem;
     width: 10rem;

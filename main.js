@@ -9,35 +9,39 @@ const navigationBar = document.querySelector('#navigationBar');
 
 //pages settup
 
-navToggel.addEventListener('click', function()
+navToggel.addEventListener('click', function ()
 {
     navigationBar.classList.toggle('activeNav');
 });
 
-examples.forEach((example, index) => {
-    example.addEventListener('click', () => {
+examples.forEach((example, index) =>
+{
+    example.addEventListener('click', () =>
+    {
         SwithchExampleContainerActive(example, index);
     });
 });
 
-examplePageBodys.forEach((examplePageBody) => {
+examplePageBodys.forEach((examplePageBody) =>
+{
     examplePageBody.classList.add('hidden');
 
 });
-
-
-
 
 //rest of the page java script
 
 //the example project contsinares javascript eill be below
 
-function SwithchExampleContainerActive(example, index) {
-    if (!example.classList.contains('ActiveExampleContainer')) {
+function SwithchExampleContainerActive(example, index)
+{
+    if (!example.classList.contains('ActiveExampleContainer'))
+    {
         example.classList.add('ActiveExampleContainer');
-    } else {
+    } else
+    {
         example.classList.remove('ActiveExampleContainer');
-        setTimeout(function () {
+        setTimeout(function ()
+        {
             chekBoxes();
         }, 510);
     }
@@ -50,32 +54,43 @@ window.addEventListener('scroll', chekBoxes);
 
 chekBoxes();
 
-function chekBoxes() {
+function chekBoxes()
+{
     let triggerPoint = (window.innerHeight / 5) * 4;
 
-    examples.forEach((example) => {
+    examples.forEach((example) =>
+    {
         let exampleTop = example.getBoundingClientRect().top;
+        let exampleBottom = example.getBoundingClientRect().bottom;
 
         console.log(exampleTop);
 
-        if (exampleTop < triggerPoint) {
+        if (exampleTop < triggerPoint)
+        {
             example.classList.add('show');
-        } else {
+        }
+        else
+        {
             example.classList.remove('show');
-            if (example.classList.contains('ActiveExampleContainer')) {
+            if (example.classList.contains('ActiveExampleContainer'))
+            {
                 example.classList.remove('ActiveExampleContainer');
             }
         }
+
     });
 }
 
 // expanding/shrinking the ExamplePageBody
 
-function examplePageBodySizeChange(index) {
-    if (examplePageBodys.item(index).classList.contains('hidden')) {
+function examplePageBodySizeChange(index)
+{
+    if (examplePageBodys.item(index).classList.contains('hidden'))
+    {
         examplePageBodys.item(index).classList.remove('hidden');
         examplePageBodys.item(index).classList.add('showExamplePageBody');
-    } else {
+    } else
+    {
         examplePageBodys.item(index).classList.add('hidden');
         examplePageBodys.item(index).classList.remove('showExamplePageBody');
     }
