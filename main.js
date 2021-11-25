@@ -63,8 +63,6 @@ function chekBoxes()
         let exampleTop = example.getBoundingClientRect().top;
         let exampleBottom = example.getBoundingClientRect().bottom;
 
-        console.log(exampleTop);
-
         if (exampleTop < triggerPoint)
         {
             example.classList.add('show');

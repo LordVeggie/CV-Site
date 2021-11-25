@@ -13,6 +13,7 @@
 
     <!-- All example css files below this point -->
     <link rel="stylesheet" href="./examplePagesCss/example1.css" />
+    <link rel="stylesheet" href="./examplePagesCss/example2.css" />
 </head>
 
 <body>
@@ -23,6 +24,7 @@
             <nav class="navcontainer" id="navigationBar">
                 <ul>
                     <li><a href="#Page">Top of page</a></li>
+                    <li><a href="#cvStart">CV</a></li>
                     <li><a href="#ExamplePages">Examples</a></li>
                 </ul>
                 <button id="navIcon" class="navIcon">
@@ -36,8 +38,13 @@
 
         <div id="BodyOfPage">
             <!-- this will the core content of the page -->
+            <div id="cvStart" class="CVBody">
+                <!-- this will the core content of the vc -->
+
+            </div>
 
             <div id="ExamplePages" class="ExamplesContainer">
+                <!-- this will the eaxmpls demistration of pratical skills -->
                 <div class="Example ExampleContainer">
                     <div class="ExamplePageHead">Text move Example</div>
 
@@ -70,13 +77,35 @@
                 </div>
 
                 <div class="Example ExampleContainer">
-                    <div class="ExamplePageHead">Log-in page Example</div>
-                    <div class="ExamplePageBody">
+                    <div class="ExamplePageHead">Movie Page Example</div>
+                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
+
+                        <div id="example2" class="example2Page">
+
+                            <div id="headMovieExample" class="movieHead">
+                                <input type="text" name="movieSearch" id="movieSearch" class="movieSearch"
+                                    placeholder="Search">
+                                <button id="movieSerchButton" class="movieBtn">&#9906</button>
+                            </div>
+
+                            <div id="bodyMovieExample" class="bodyMovieExample">
+                                <!-- all movies are placed inside the body-->
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
 
                 <div class="Example ExampleContainer">
                     <div class="ExamplePageHead">Log-in page Example</div>
+                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
+
+                        <div id="example3" class="example3Page">
+
+                        </div>
+
+                    </div>
                     <div class="ExamplePageBody">content content content</div>
                 </div>
 
@@ -114,6 +143,7 @@
 
     <!-- All example css files below this point -->
     <script src="./examplePagesJava/example1.js"></script>
+    <script src="./examplePagesJava/example2.js"></script>
 </body>
 
 </html>

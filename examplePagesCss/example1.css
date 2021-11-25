@@ -1,7 +1,8 @@
 .example1Page
 {
+    background-color: transparent;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     border-bottom-left-radius: 1rem;
     background-color: #111a24;
     align-content: center;
