@@ -7,6 +7,8 @@ const examplePageBodys = document.querySelectorAll('.ExamplePageBody');
 const navToggel = document.querySelector('#navIcon');
 const navigationBar = document.querySelector('#navigationBar');
 
+const uniCompleteStats = document.querySelector('#uniComplete');
+
 //pages settup
 
 navToggel.addEventListener('click', function ()
@@ -94,5 +96,51 @@ function examplePageBodySizeChange(index)
     }
 }
 
-//stop pages for srinking when clicking on exampel pages body
+//create statbars 
+function CreateStat(subject, mark)
+{
+    //create
+    const skill = document.createElement('div');
+    skill.classList.add('skill');
 
+    const skillName = document.createElement('label');
+    skillName.classList.add('skillText');
+    skillName.innerText = subject;
+
+    const barBack = document.createElement('div');
+    barBack.classList.add('barBack');
+
+    const statbar = document.createElement('div');
+    statbar.classList.add(`statbar`);
+    if (mark >= 75)
+    {
+        statbar.classList.add(`${ colorbar(mark) }`);
+    }
+    statbar.innerText = mark;
+    statbar.style.width = `${ mark }%`;
+
+
+    //append
+    barBack.appendChild(statbar);
+
+    skill.appendChild(skillName);
+    skill.appendChild(barBack);
+
+    //return
+
+    return skill;
+}
+
+function colorbar(mark)
+{
+    if (mark >= 75)
+    {
+        return 'distinction';
+    }
+
+}
+
+//pages construction must be at the bottom of the java file
+
+uniCompleteStats.appendChild(CreateStat('cmpg322 mathimatical stastic', 90));
+uniCompleteStats.appendChild(CreateStat('cmpg321 operatingsyatems', 60));

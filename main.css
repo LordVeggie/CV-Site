@@ -20,7 +20,7 @@
         background-color: #111a24;
     }
     to {
-        background-color: pink;
+        background-color: yellow;
     }
 }
 
@@ -183,6 +183,119 @@ nav ul a
     transform: rotate(765deg) translateY(-0.55rem);
 }
 
+.CVBody
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
+
+.container
+{
+    /* used to wrap the indivudial bits of the cv */
+    width: 100%;
+    background-color: #5e5e5f;
+
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+
+    padding: 1rem;
+
+    font-size: 2rem;
+}
+
+.containerTitle
+{
+    width: 50%;
+    text-align: center;
+    border-bottom: 0.1rem solid #ff652f;
+    margin: 1rem 25% 2rem ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.skillsBack
+{
+    /* used to show the skills in cv */
+
+    margin: 0rem 10% 0rem;
+}
+
+.skill
+{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.skillText
+{
+    padding: 0;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+.statbar
+{
+    margin: .2rem .2rem .2rem;
+    width: 50%;
+    background-color: #ff652f;
+    height: 2rem;
+    border-radius: 1rem;
+    text-align: end;
+    color: yellow;
+    padding-right: 1rem;
+}
+
+.barBack
+{
+    width:100%;
+    background-color: #111a24;
+    border: 0.1rem solid #ff652f;
+    border-radius: 1rem;
+    height: 2.6rem;
+    margin-left: 1rem;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.distinction
+{
+    background-color:  yellow;
+    color: #ff652f;
+}
+
+
+.Downloadable
+{
+    display: block;
+    background-color: white;
+    width: max-content;
+    height: 100px;
+    align-self: center;
+    border-radius: 1rem;
+    transition: background-color 0.6s ease;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Downloadable:hover
+{
+    background-color: yellow;
+}
+
 .ExamplesContainer {
     display: flex;
     justify-content: space-evenly;
@@ -192,6 +305,8 @@ nav ul a
     align-items: center;
     width: 90%;
 }
+
+
 
 /* page it self and can be used for other elements of the page centering in a element would be an example*/
 
