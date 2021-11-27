@@ -224,6 +224,36 @@ nav ul a
     /* used to show the skills in cv */
 
     margin: 0rem 10% 0rem;
+
+   
+}
+
+.skillsbackLines
+{
+    background-color: #5e5e5f;
+    background-image: linear-gradient(
+        to right,
+        #5e5e5f 100px,
+
+        #5e5e5f 18.5%,
+        white 19%,
+        #5e5e5f 19.5%,
+
+        #5e5e5f 39.5%,
+        white 40%,
+        #5e5e5f 40.5%,
+
+        #5e5e5f 59.5%,
+        white 60%,
+        #5e5e5f 60.2%,
+
+        #5e5e5f 79.5%,
+        white 80%,
+        #5e5e5f 80.2%,
+
+        #5e5e5f 99.5%,
+        white 100%
+    );
 }
 
 .skill
@@ -243,6 +273,9 @@ nav ul a
     flex-direction: column;
     font-size: 1.6rem;
     letter-spacing: .1rem;
+    color: white;
+
+    border-bottom: 0.1rem white solid;
 }
 
 .statbar
@@ -276,6 +309,17 @@ nav ul a
     color: #ff652f;
 }
 
+.skillsBack ul
+{
+    list-style: none;
+}
+
+.skillsBack ul li
+{
+   text-align: center;
+   padding-bottom: 1rem;
+   color: white;
+}
 
 .Downloadable
 {

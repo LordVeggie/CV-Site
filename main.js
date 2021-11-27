@@ -142,5 +142,29 @@ function colorbar(mark)
 
 //pages construction must be at the bottom of the java file
 
-uniCompleteStats.appendChild(CreateStat('cmpg322 mathimatical stastic', 90));
-uniCompleteStats.appendChild(CreateStat('cmpg321 operatingsyatems', 60));
+uniCompleteStats.appendChild(CreateStat('ACCS 111 FINANCIAL ACCOUNTANCY', 77));
+uniCompleteStats.appendChild(CreateStat('ACCS 121 FINANCIAL ACCOUNTING', 62));
+uniCompleteStats.appendChild(CreateStat('ALDE 122 ACADEMIC LITERACY DEVELOPMENT - ENG', 80));
+uniCompleteStats.appendChild(CreateStat('BMAN 111 INTRODUCTION TO BUSINESS MANAGEMENT', 70));
+uniCompleteStats.appendChild(CreateStat('BMAN 223 PROBLEM SOLVING FOR MANAGERS', 62));
+uniCompleteStats.appendChild(CreateStat('CMPG 111 INTRODUCTION TO COMPUTING AND PROGRAMMING', 87));
+uniCompleteStats.appendChild(CreateStat('CMPG 121 STRUCTURED PROGRAMMING', 96));
+uniCompleteStats.appendChild(CreateStat('CMPG 122 USER INTERFACE PROGRAMMING I', 75));
+uniCompleteStats.appendChild(CreateStat('CMPG 211 OBJECT ORIENTED PROGRAMMING', 84));
+uniCompleteStats.appendChild(CreateStat('CMPG 212 APPS AND ADVANCED USER INTERFACE PROGRAMMING', 82));
+uniCompleteStats.appendChild(CreateStat('CMPG 213 SYSTEM ANALYSIS AND DESIGN 1', 75));
+uniCompleteStats.appendChild(CreateStat('CMPG 214 COMMUNICATION SKILLS', 87));
+uniCompleteStats.appendChild(CreateStat('CMPG 215 INFORMATION SECURITY', 71));
+uniCompleteStats.appendChild(CreateStat('CMPG 221 DATA STRUCTRES AND ALGORITHMS', 89));
+uniCompleteStats.appendChild(CreateStat('CMPG 222 DATA ANALYTICS II', 88));
+uniCompleteStats.appendChild(CreateStat('CMPG 223 SYSTEM ANALYSIS AND DESIGN II', 59));
+uniCompleteStats.appendChild(CreateStat('CMPG 311 DATABASES', 73));
+uniCompleteStats.appendChild(CreateStat('CMPG 312 DECISION SUPPORT SYSTEMS 1', 58));
+uniCompleteStats.appendChild(CreateStat('CMPG 313 ARTIFICIAL INTELLIGENCE', 67));
+uniCompleteStats.appendChild(CreateStat('CMPG 315 COMPUTER NETWORKS', 73));
+uniCompleteStats.appendChild(CreateStat('MTHS 113 BASIC MATHEMATICAL TECHNIQUES', 56));
+uniCompleteStats.appendChild(CreateStat('MTHS 225 DISCRETE MATHEMATICS', 75));
+uniCompleteStats.appendChild(CreateStat('STTN 111 DESCRIPTIVE STATISTICS', 83));
+uniCompleteStats.appendChild(CreateStat('STTN 121 INTRO STAT INFERENCE I', 75));
+uniCompleteStats.appendChild(CreateStat('WVNS 211 UNDERSTANDING THE NATURAL WORLD', 86));
+uniCompleteStats.appendChild(CreateStat('WVNS 221 UNDERSTANDING THE NATURAL WORLD', 87));
