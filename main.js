@@ -9,6 +9,9 @@ const navigationBar = document.querySelector('#navigationBar');
 
 const uniCompleteStats = document.querySelector('#uniComplete');
 
+const disciplinesText = document.querySelector('#disciplinesText');
+const disciplinesBar = document.querySelector('#disciplinesBar');
+
 //pages settup
 
 navToggel.addEventListener('click', function ()
@@ -140,6 +143,62 @@ function colorbar(mark)
 
 }
 
+
+function createSkill(text, level, textContainer, barContainer)
+{
+    //create
+
+    const skillName = document.createElement('label');
+    skillName.classList.add('skillText');
+    skillName.classList.add(`skillsTextSpaceBottom`);
+    skillName.innerText = text;
+
+
+    const barBack = document.createElement('div');
+    barBack.classList.add('barBack');
+    barBack.classList.add(`skillsBarSpaceBottom`);
+
+    const statbar = document.createElement('div');
+    statbar.classList.add(`statbar`);
+
+    statbar.classList.add(`${ colorSkillBar(level) }`);
+
+
+    statbar.style.width = `${ level }%`;
+
+    //append
+    barBack.appendChild(statbar);
+
+    textContainer.appendChild(skillName);
+    barContainer.appendChild(barBack);
+
+}
+
+function colorSkillBar(level)
+{
+    if (level > 80)
+    {
+        return 'Expert';
+    }
+    if (level > 60)
+    {
+        return 'Advanced';
+    }
+    if (level > 40)
+    {
+        return 'Intermadiate';
+    }
+    if (level > 20)
+    {
+        return 'Elementray';
+    }
+    else
+    {
+        return 'Beginner';
+    }
+
+}
+
 //pages construction must be at the bottom of the java file
 
 uniCompleteStats.appendChild(CreateStat('ACCS 111 FINANCIAL ACCOUNTANCY', 77));
@@ -168,3 +227,9 @@ uniCompleteStats.appendChild(CreateStat('STTN 111 DESCRIPTIVE STATISTICS', 83));
 uniCompleteStats.appendChild(CreateStat('STTN 121 INTRO STAT INFERENCE I', 75));
 uniCompleteStats.appendChild(CreateStat('WVNS 211 UNDERSTANDING THE NATURAL WORLD', 86));
 uniCompleteStats.appendChild(CreateStat('WVNS 221 UNDERSTANDING THE NATURAL WORLD', 87));
+
+
+createSkill('Coding', 100, disciplinesText, disciplinesBar);
+createSkill('Design', 80, disciplinesText, disciplinesBar);
+createSkill('Illistratoin', 80, disciplinesText, disciplinesBar);
+createSkill('Animation', 60, disciplinesText, disciplinesBar);

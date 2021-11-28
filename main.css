@@ -230,14 +230,18 @@ nav ul a
 
 .skillsbackLines
 {
+   
     background-color: #5e5e5f;
     background-image: linear-gradient(
         to right,
-        #5e5e5f 100px,
 
-        #5e5e5f 18.5%,
-        white 19%,
+        
+        white 0%,
+        #5e5e5f 0.5%,
+
         #5e5e5f 19.5%,
+        white 20%,
+        #5e5e5f 20.5%,
 
         #5e5e5f 39.5%,
         white 40%,
@@ -245,14 +249,86 @@ nav ul a
 
         #5e5e5f 59.5%,
         white 60%,
-        #5e5e5f 60.2%,
+        #5e5e5f 60.5%,
 
         #5e5e5f 79.5%,
         white 80%,
-        #5e5e5f 80.2%,
+        #5e5e5f 80.5%,
 
         #5e5e5f 99.5%,
         white 100%
+    );
+}
+
+.Beginner
+{
+    background-color: #ff652f;
+    background-image: repeating-linear-gradient(
+        to right,
+        
+        #111a24 0%,
+        #111a24 25%,
+        #ff652f 50%,
+        #111a24 75%,
+        #111a24 100%
+    );
+}
+
+.Elementray
+{
+    background-color: #ff652f;
+    background-image: repeating-linear-gradient(
+        to right,
+        
+        #111a24 0%,
+        #111a24 12.5%,
+        #ff652f 25%,
+        #111a24 37.5%,
+        #111a24 50%
+    );
+
+}
+
+.Intermadiate
+{
+    background-color: #ff652f;
+    background-image: repeating-linear-gradient(
+        to right,
+        
+        #111a24 0%,
+        #111a24 8.25%,
+        #ff652f 16.5%,
+        #111a24 24.75%,
+        #111a24 33.33%
+    );
+
+}
+
+.Advanced
+{
+    background-color: #ff652f;
+    background-image: repeating-linear-gradient(
+        to right,
+        
+        #111a24 0%,
+        #111a24 6.25%,
+        #ff652f 12.5%,
+        #111a24 18.75%,
+        #111a24 25%
+    );
+}
+
+.Expert
+{
+    background-color: #ff652f;
+    background-image: repeating-linear-gradient(
+        to right,
+        
+        #111a24 0%,
+        #111a24 5%,
+        #ff652f 10%,
+        #111a24 15%,
+        #111a24 20%
     );
 }
 
@@ -297,10 +373,68 @@ nav ul a
     border: 0.1rem solid #ff652f;
     border-radius: 1rem;
     height: 2.6rem;
-    margin-left: 1rem;
 
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.skillsBarHeading
+{
+    display: flex;
+    margin-left: 15rem;
+    width: 100%;
+}
+
+.skillsBarHeading label
+{
+    width: 20%;
+    text-align: center;
+
+    color: yellow;
+    word-wrap: break-word;
+
+}
+
+.skillsTextContainer
+{
+    padding-top: 2rem;
+    width: 15rem;
+    letter-spacing: 0.1rem;
+    text-overflow: inherit;
+    display: inline;
+}
+
+.skillsBarContainer
+{
+    padding-top: 2rem;
+    vertical-align: top;
+    width:100%;
+   
+}
+
+.skillsBackAlign
+{
+    display: flex;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.skillsBarSpaceBottom
+{
+margin-bottom: 0.6rem;
+}
+
+.skillsTextSpaceBottom
+{
+margin-bottom: 1.5rem;
+}
+
+
+.skillList
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .distinction
