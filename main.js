@@ -12,6 +12,12 @@ const uniCompleteStats = document.querySelector('#uniComplete');
 const disciplinesText = document.querySelector('#disciplinesText');
 const disciplinesBar = document.querySelector('#disciplinesBar');
 
+const codingText = document.querySelector('#codingText');
+const codingBar = document.querySelector('#codingBar');
+
+const softwareText = document.querySelector('#softwareText');
+const softwareBar = document.querySelector('#softwareBar');
+
 //pages settup
 
 navToggel.addEventListener('click', function ()
@@ -56,8 +62,6 @@ function SwithchExampleContainerActive(example, index)
 //showing examples as we scrowl down
 
 window.addEventListener('scroll', chekBoxes);
-
-chekBoxes();
 
 function chekBoxes()
 {
@@ -201,6 +205,8 @@ function colorSkillBar(level)
 
 //pages construction must be at the bottom of the java file
 
+chekBoxes();
+
 uniCompleteStats.appendChild(CreateStat('ACCS 111 FINANCIAL ACCOUNTANCY', 77));
 uniCompleteStats.appendChild(CreateStat('ACCS 121 FINANCIAL ACCOUNTING', 62));
 uniCompleteStats.appendChild(CreateStat('ALDE 122 ACADEMIC LITERACY DEVELOPMENT - ENG', 80));
@@ -209,7 +215,7 @@ uniCompleteStats.appendChild(CreateStat('BMAN 223 PROBLEM SOLVING FOR MANAGERS',
 uniCompleteStats.appendChild(CreateStat('CMPG 111 INTRODUCTION TO COMPUTING AND PROGRAMMING', 87));
 uniCompleteStats.appendChild(CreateStat('CMPG 121 STRUCTURED PROGRAMMING', 96));
 uniCompleteStats.appendChild(CreateStat('CMPG 122 USER INTERFACE PROGRAMMING I', 75));
-uniCompleteStats.appendChild(CreateStat('CMPG 211 OBJECT ORIENTED PROGRAMMING', 84));
+uniCompleteStats.appendChild(CreateStat('CMPG 211 OBJECT ORIENTED PROGRAMMING', 94));
 uniCompleteStats.appendChild(CreateStat('CMPG 212 APPS AND ADVANCED USER INTERFACE PROGRAMMING', 82));
 uniCompleteStats.appendChild(CreateStat('CMPG 213 SYSTEM ANALYSIS AND DESIGN 1', 75));
 uniCompleteStats.appendChild(CreateStat('CMPG 214 COMMUNICATION SKILLS', 87));
@@ -228,8 +234,34 @@ uniCompleteStats.appendChild(CreateStat('STTN 121 INTRO STAT INFERENCE I', 75));
 uniCompleteStats.appendChild(CreateStat('WVNS 211 UNDERSTANDING THE NATURAL WORLD', 86));
 uniCompleteStats.appendChild(CreateStat('WVNS 221 UNDERSTANDING THE NATURAL WORLD', 87));
 
+//disciplines
 
 createSkill('Coding', 100, disciplinesText, disciplinesBar);
 createSkill('Design', 80, disciplinesText, disciplinesBar);
 createSkill('Illistratoin', 80, disciplinesText, disciplinesBar);
 createSkill('Animation', 60, disciplinesText, disciplinesBar);
+
+//coding
+
+createSkill('c++', 100, codingText, codingBar);
+createSkill('c', 100, codingText, codingBar);
+createSkill('c#', 80, codingText, codingBar);
+createSkill('Node.js', 40, codingText, codingBar);
+createSkill('JavaScript', 80, codingText, codingBar);
+createSkill('Python', 60, codingText, codingBar);
+createSkill('Java', 100, codingText, codingBar);
+createSkill('CSS', 60, codingText, codingBar);
+createSkill('HTML', 80, codingText, codingBar);
+createSkill('GDscript', 80, codingText, codingBar);
+createSkill('SQL', 40, codingText, codingBar);
+
+//software
+
+createSkill('Blender', 100, softwareText, softwareBar);
+createSkill('Godot', 80, softwareText, softwareBar);
+createSkill('Git', 60, softwareText, softwareBar);
+createSkill('CorelDraw', 100, softwareText, softwareBar);
+createSkill('Excel', 100, softwareText, softwareBar);
+createSkill('Unity', 40, softwareText, softwareBar);
+createSkill('Krita', 60, softwareText, softwareBar);
+createSkill('Gimp', 80, softwareText, softwareBar);

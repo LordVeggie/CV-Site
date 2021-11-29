@@ -421,12 +421,13 @@ nav ul a
 
 .skillsBarSpaceBottom
 {
-margin-bottom: 0.6rem;
+    margin-bottom: 1rem;
 }
 
 .skillsTextSpaceBottom
 {
-margin-bottom: 1.5rem;
+    height: 2.6rem;
+    margin-bottom: 1rem;
 }
 
 
