@@ -88,8 +88,6 @@ function chekBoxes()
             }
         }
 
-        console.log(container);
-
     });
 
     //example pages
