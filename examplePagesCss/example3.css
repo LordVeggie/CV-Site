@@ -61,6 +61,8 @@
     position: relative;
     width: 20rem;
     height: 20rem;
+
+    margin-bottom: 5rem;
 }
 
 .hand
@@ -161,7 +163,35 @@
     color: #111a24;
 }
 
-.dateCircle
+.hourMark
 {
+    z-index: 50;
+    height: 1rem;
+    width: 1rem;
 
+    background-color: #C5C6C7;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform-origin: bottom center;
+    transform-origin: -10rem bottom;
+    transform: translate(-50%, -10rem) rotate(90deg);
+
+    transition: background-color 2s ease;
+    
+    border-radius: 100%;
+}
+
+.example3Page.lightMode .hourMark
+{
+    background-color: #1F2833;
+}
+
+
+
+.hourMainMark
+{
+    border-radius: 0%;
 }
