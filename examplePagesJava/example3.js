@@ -43,7 +43,7 @@ function setTime()
     const seconds = (time.getSeconds());
 
     //rotate the hands
-    const h = hours * 0.03333 * 360;
+    const h = hours * 30;
     const m = minutes * 6;
     const s = seconds * 6;
 
@@ -53,7 +53,7 @@ function setTime()
 
     clockTime.textContent = `${ hours }:${ minutes }`;
 
-    console.log(h + ':' + m + ':' + s);
+    console.log(h + 'h : ' + m + 'm :' + s);
 }
 
 setInterval(setTime, 1000);
