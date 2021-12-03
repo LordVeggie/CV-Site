@@ -206,6 +206,17 @@ nav ul a
     padding: 1rem;
 
     font-size: 2rem;
+
+    transform: translateX(200%);
+    transition: transform 0.5s linear;
+}
+
+.container:nth-last-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.container.show {
+    transform: translateX(0);
 }
 
 .containerTitle
@@ -357,13 +368,34 @@ nav ul a
 .statbar
 {
     margin: .2rem .2rem .2rem;
-    width: 50%;
     background-color: #ff652f;
     height: 2rem;
     border-radius: 1rem;
     text-align: end;
     color: yellow;
     padding-right: 1rem;
+    transition: opacity 2s linear;
+    opacity: 0;
+
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    
+}
+
+.container.show .barBack .statbar
+{
+    opacity: 1;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .barBack
@@ -484,8 +516,6 @@ nav ul a
     align-items: center;
     width: 90%;
 }
-
-
 
 /* page it self and can be used for other elements of the page centering in a element would be an example*/
 

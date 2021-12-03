@@ -7,6 +7,8 @@ const examplePageBodys = document.querySelectorAll('.ExamplePageBody');
 const navToggel = document.querySelector('#navIcon');
 const navigationBar = document.querySelector('#navigationBar');
 
+const containers = document.querySelectorAll('.container');
+
 const uniCompleteStats = document.querySelector('#uniComplete');
 
 const disciplinesText = document.querySelector('#disciplinesText');
@@ -67,10 +69,34 @@ function chekBoxes()
 {
     let triggerPoint = (window.innerHeight / 5) * 4;
 
+    //the cv tabs
+
+    containers.forEach((container) =>
+    {
+        let containerTop = container.getBoundingClientRect().top;
+
+        if (containerTop < triggerPoint)
+        {
+            container.classList.add('show');
+        }
+        else
+        {
+            container.classList.remove('show');
+            if (container.classList.contains('ActiveContainer'))
+            {
+                container.classList.remove('ActiveContainer');
+            }
+        }
+
+        console.log(container);
+
+    });
+
+    //example pages
+
     examples.forEach((example) =>
     {
         let exampleTop = example.getBoundingClientRect().top;
-        let exampleBottom = example.getBoundingClientRect().bottom;
 
         if (exampleTop < triggerPoint)
         {
