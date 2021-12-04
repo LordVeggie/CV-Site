@@ -85,8 +85,6 @@ function setTime()
 
     clockTime.innerText = `${ hours }:${ minutes } ${ timeOfDay }`;
     clockDate.innerText = `${ days[day] }, ${ months[month] } ${ date }`;
-
-    console.log(h + 'h : ' + m + 'm :' + s);
 }
 
 setInterval(setTime, 1000);

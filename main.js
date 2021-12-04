@@ -20,6 +20,15 @@ const codingBar = document.querySelector('#codingBar');
 const softwareText = document.querySelector('#softwareText');
 const softwareBar = document.querySelector('#softwareBar');
 
+const gitHubProfileImage = document.querySelector('#gitHubProfileImage');
+const gitHubUserName = document.querySelector('#gitHubUserName');
+const gitHubBio = document.querySelector('#gitHubBio');
+const gitHubFollowers = document.querySelector('#gitHubFollowers');
+const gitHubFollowing = document.querySelector('#gitHubFollowing');
+const gitHubRepoCount = document.querySelector('#gitHubRepoCount');
+const gitHubRepos = document.querySelector('#gitHubRepos');
+
+
 //pages settup
 
 navToggel.addEventListener('click', function ()
@@ -227,6 +236,70 @@ function colorSkillBar(level)
 
 }
 
+//github api
+
+const gitHupApiUrl = 'https://api.github.com/users/';
+
+//axios functions
+async function getGitHubUser(userName)
+{
+    try
+    {
+        const user = await axios(gitHupApiUrl + userName);
+
+        return user.data;
+    }
+    catch (e)
+    {
+        console.log(e);
+    }
+}
+
+async function getGitHubUserRepos(userName)
+{
+    try
+    {
+        const repos = await axios(gitHupApiUrl + userName + '/repos');
+
+        return repos.data;
+    }
+    catch (e)
+    {
+        console.log(e);
+    }
+}
+
+async function createGitHubUser()
+{
+    const user = await getGitHubUser('LordVeggie');
+    const repos = await getGitHubUserRepos('LordVeggie');
+
+    gitHubProfileImage.src = user.avatar_url;
+
+    gitHubUserName.innerText = user.login;
+    gitHubBio.innerText = user.bio;
+    gitHubFollowers.innerHTML = `${ user.followers } <strong>Followers</strong>`;
+    gitHubFollowing.innerHTML = `${ user.following } <strong>Following</strong>`;
+    gitHubRepoCount.innerHTML = `${ user.public_repos } <strong>Repos</strong>`;
+
+    //reops
+    console.log(repos);
+
+    repos.forEach(repo =>
+    {
+        const repoElemnt = document.createElement('a');
+        repoElemnt.classList.add('repo');
+        repoElemnt.href = repo.html_url;
+        repoElemnt.target = '_blank';
+        repoElemnt.innerText = repo.name;
+
+        gitHubRepos.appendChild(repoElemnt);
+
+        console.log(repo.html_url + ' : ' + repo.name);
+    });
+
+}
+
 //pages construction must be at the bottom of the java file
 
 chekBoxes();
@@ -289,3 +362,6 @@ createSkill('Excel', 100, softwareText, softwareBar);
 createSkill('Unity', 40, softwareText, softwareBar);
 createSkill('Krita', 60, softwareText, softwareBar);
 createSkill('Gimp', 80, softwareText, softwareBar);
+
+//github
+createGitHubUser()

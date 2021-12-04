@@ -25,8 +25,9 @@
             <nav class="navcontainer" id="navigationBar">
                 <ul>
                     <li><a href="#Page">Top of page</a></li>
-                    <li><a href="#cvStart">CV</a></li>
                     <li><a href="#ExamplePages">Examples</a></li>
+                    <li><a href="#gitHub">GitHub Profile</a></li>
+
                 </ul>
                 <button id="navIcon" class="navIcon">
                     <div class="line line1"></div>
@@ -179,6 +180,37 @@
 
                 </div>
 
+                <div id="gitHub" class="container">
+                    <!-- software skills -->
+                    <div class="containerTitle">
+                        GitHub Profile
+                    </div>
+
+                    <div class="gitHubProfileContainer">
+                        <div class="gitHubProfileImage">
+                            <img id="gitHubProfileImage" src="" alt="git Avatar">
+                        </div>
+                        <div class="gitHubProfileInfo">
+
+                            <h2 id="gitHubUserName" class="gitHubUserName"></h2>
+
+                            <p id="gitHubBio" class="gitHubBio">
+                            </p>
+
+                            <ul class="gitHubStats">
+                                <li id="gitHubFollowers"></li>
+                                <li id="gitHubFollowing"></li>
+                                <li id="gitHubRepoCount"></li>
+                            </ul>
+
+                            <div id="gitHubRepos" class="gitHubRepos">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
             <div id="ExamplePages" class="ExamplesContainer">
@@ -266,13 +298,9 @@
 
                                 </div>
 
-                                <div class="clockTime">
-                                    12:00
-                                </div>
+                                <div class="clockTime"></div>
 
-                                <div class="clockDate">
-                                    Monday, Nov 12
-                                </div>
+                                <div class="clockDate"></div>
 
                             </div>
 
@@ -291,15 +319,22 @@
                         </div>
 
                     </div>
-                    <div class="ExamplePageBody">content content content</div>
                 </div>
-
 
             </div>
 
         </div>
 
     </div>
+
+    <!-- Axios for working with github api -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+        integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- main script -->
 
     <script src="./main.js"></script>
 

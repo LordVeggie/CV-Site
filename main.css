@@ -424,7 +424,6 @@ nav ul a
 
     color: yellow;
     word-wrap: break-word;
-
 }
 
 .skillsTextContainer
@@ -517,6 +516,95 @@ nav ul a
     width: 90%;
 }
 
+.gitHubProfileContainer
+{
+    display: flex;
+    width: 80%;
+    margin: 0 10% 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.gitHubProfileImage
+{
+    min-width: 15rem;
+    width: 10%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 1rem 0;
+
+    background-color: #111a24;
+}
+
+.gitHubProfileImage img
+{
+    width: 100%;
+}
+
+.gitHubProfileInfo
+{
+    padding: 2rem;
+    width: 60%;
+}
+
+.gitHubUserName
+{
+    color: yellow;
+}
+
+.gitHubBio
+{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.gitHubStats
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50rem;
+    padding: 0;
+}
+
+.gitHubStats li
+{
+    padding-right: 0.5rem;
+}
+
+.gitHubStats li strong
+{
+    margin-left: 0.1rem;
+    font-size: 1.8rem;
+}
+
+.gitHubRepos
+{
+    margin-top: 2rem;
+}
+
+.repo
+{
+    text-decoration: none;
+    padding: 0.5rem 1rem 0.5rem;
+    background-color: #111a24;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 1rem;
+
+    transition: all 0.5s ease;
+
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.repo:hover
+{
+    color: yellow;
+    padding: 0.5rem 1.5rem 0.5rem;
+}
+
 /* page it self and can be used for other elements of the page centering in a element would be an example*/
 
 .flex-center-column {
@@ -558,3 +646,22 @@ nav ul a
 .hidden {
     display: none;
 }
+
+@media only screen and (max-width: 1000px) {
+    .skillsBarHeading label
+    {
+        width: 20%;
+
+        display: flex;
+
+        text-align: center;
+        align-items: center;
+        align-content: center;
+
+        writing-mode:vertical-rl;
+        text-orientation: upright;
+
+        font-size: 1.5rem;
+    
+    }
+  }
