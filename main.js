@@ -283,8 +283,6 @@ async function createGitHubUser()
     gitHubRepoCount.innerHTML = `${ user.public_repos } <strong>Repos</strong>`;
 
     //reops
-    console.log(repos);
-
     repos.forEach(repo =>
     {
         const repoElemnt = document.createElement('a');
@@ -294,8 +292,6 @@ async function createGitHubUser()
         repoElemnt.innerText = repo.name;
 
         gitHubRepos.appendChild(repoElemnt);
-
-        console.log(repo.html_url + ' : ' + repo.name);
     });
 
 }

@@ -10,23 +10,47 @@
     <title>CV Site</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="mainExample.css" />
+    <link rel="stylesheet" href="loading.css" />
 
     <!-- All example css files below this point -->
     <link rel="stylesheet" href="./examplePagesCss/example1.css" />
     <link rel="stylesheet" href="./examplePagesCss/example2.css" />
     <link rel="stylesheet" href="./examplePagesCss/example3.css" />
+    <link rel="stylesheet" href="./examplePagesCss/example4.css" />
 </head>
 
 <body>
+
+    <div id="mainLoad" class="loadingContainer">
+        <!-- loading -->
+
+        <div id="mainLoadingCounter" class="loadingCounter ">
+            <div id="" class="loadingNums">
+                <span class="loadingIn">10</span>
+                <span>9</span>
+                <span>8</span>
+                <span>7</span>
+                <span>6</span>
+                <span>5</span>
+                <span>4</span>
+                <span>2</span>
+                <span>1</span>
+                <span>0</span>
+
+            </div>
+            <span>Loading...</span>
+        </div>
+    </div>
+
     <div id="Page">
         <!-- All page content will be inside this div -->
         <div id="HeadOfPage" class="headOfPage">
             <!-- this will the head of the page constent like the navigation bar will be here -->
             <nav class="navcontainer" id="navigationBar">
                 <ul>
-                    <li><a href="#Page">Top of page</a></li>
-                    <li><a href="#ExamplePages">Examples</a></li>
+                    <li><a href="#Page">CV</a></li>
                     <li><a href="#gitHub">GitHub Profile</a></li>
+                    <li><a href="#ExamplePages">Examples</a></li>
 
                 </ul>
                 <button id="navIcon" class="navIcon">
@@ -311,10 +335,42 @@
                 </div>
 
                 <div class="Example ExampleContainer">
-                    <div class="ExamplePageHead">Log-in page Example</div>
+                    <div class="ExamplePageHead">loading pokemon api Example</div>
                     <div class="ExamplePageBody" onclick="event.stopPropagation()">
 
                         <div id="example4" class="example4Page">
+
+                            <div id="example4LoadingContainer" class="loadingContainer pokemonLoadback">
+                                <!-- loading -->
+
+                                <div id="example4LoadingCounter" class="loadingCounter ">
+                                    <div class="loadingNums">
+                                        <span class="loadingIn">3</span>
+                                        <span>2</span>
+                                        <span>1</span>
+                                        <span>0</span>
+
+                                    </div>
+                                    <span>Loading...</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <!-- page -->
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="Example ExampleContainer">
+                    <div class="ExamplePageHead">Log-in page Example</div>
+                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
+
+                        <div id="example5" class="example5Page">
 
                         </div>
 
@@ -337,11 +393,13 @@
     <!-- main script -->
 
     <script src="./main.js"></script>
+    <script src="./loading.js"></script>
 
     <!-- All example css files below this point -->
     <script src="./examplePagesJava/example1.js"></script>
     <script src="./examplePagesJava/example2.js"></script>
     <script src="./examplePagesJava/example3.js"></script>
+    <script src="./examplePagesJava/example4.js"></script>
 </body>
 
 </html>

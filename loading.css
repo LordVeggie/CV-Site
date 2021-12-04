@@ -1,0 +1,107 @@
+
+.loadingContainer
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background-color: #111a24;
+
+    transform: scale(1);
+}
+
+.loadingContainer.hide
+{
+    transform: scale(0);
+    animation: hideLoader 0.5s ease;
+}
+
+.loadingCounter
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-size: 3rem;
+    text-align: center; 
+    width: 100%;
+}
+
+@keyframes hideLoader
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(0);
+    }
+}
+
+
+.loadingCounter.hide
+{
+    transform: scale(0);
+    animation: hideLoader 0.5s ease;
+}
+
+.loadingNums
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 3rem;
+}
+
+.loadingNums span
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    transform-origin: bottom center;
+}
+
+.loadingNums span.loadingIn
+{
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: goIn 0.5s ease;
+}
+
+.loadingNums span.loadingOut
+{
+    animation: goOut 0.5s ease;
+}
+
+@keyframes goIn
+{
+    
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@keyframes goOut
+{
+    0%
+    {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -50%) rotate(-180deg);
+    }
+}
+
+#mainLoad
+{
+    z-index: 10000;
+}

@@ -87,7 +87,9 @@ h3 {
 
 .navcontainer.activeNav
 {
-    width: 50%;
+    width: fit-content;
+    min-width: 50%;
+
 }
 
 .navcontainer ul

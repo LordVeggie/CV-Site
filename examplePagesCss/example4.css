@@ -1,0 +1,15 @@
+.example4Page
+{
+    border: none;
+    width: 100%;
+    height: fit-content;
+    min-height: 100%;
+    border-bottom-left-radius: 1rem;
+    background-color: #111a24;
+    padding-bottom: 2rem;    
+}
+
+.pokemonLoadback
+{
+    border-bottom-left-radius: 1rem;
+}
