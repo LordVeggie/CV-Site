@@ -360,7 +360,7 @@ uniCompleteStats.appendChild(CreateStat('WVNS 221 UNDERSTANDING THE NATURAL WORL
 
 createSkill('Coding', 100, disciplinesText, disciplinesBar);
 createSkill('Design', 80, disciplinesText, disciplinesBar);
-createSkill('Illistratoin', 80, disciplinesText, disciplinesBar);
+createSkill('Illustration', 80, disciplinesText, disciplinesBar);
 createSkill('Animation', 60, disciplinesText, disciplinesBar);
 
 //coding

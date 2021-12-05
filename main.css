@@ -658,6 +658,27 @@ nav ul a
     z-index: -1;
 }
 
+.profileImage
+{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container p
+{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.profileImage img
+{
+    width: 100%;
+}
+
 /* page it self and can be used for other elements of the page centering in a element would be an example*/
 
 .flex-center-column {
