@@ -360,4 +360,4 @@ createSkill('Krita', 60, softwareText, softwareBar);
 createSkill('Gimp', 80, softwareText, softwareBar);
 
 //github
-createGitHubUser()
+createGitHubUser();
