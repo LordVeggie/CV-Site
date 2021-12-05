@@ -28,6 +28,9 @@ const gitHubFollowing = document.querySelector('#gitHubFollowing');
 const gitHubRepoCount = document.querySelector('#gitHubRepoCount');
 const gitHubRepos = document.querySelector('#gitHubRepos');
 
+const loadBackground = document.querySelector('#loadBackground');
+const mainBackground = document.querySelector('#mainBackground');
+
 
 //pages settup
 
@@ -296,7 +299,33 @@ async function createGitHubUser()
 
 }
 
+//function for making moving bits of back ground
+
+function createMovingBackgroung(parent)
+{
+    for (let i = 0; i < 50; i++)
+    {
+        let x = Math.floor((Math.random() * 100) + 1);
+        let y = Math.floor((Math.random() * 100) + 30);
+        let t = Math.floor((Math.random() * 20) + 5);
+
+        //create
+        const shape = document.createElement('div');
+        shape.style.left = `${ x }%`;
+        shape.style.top = `${ y }%`;
+        shape.style.animation = `backgroundOfPageAnimation ${ t }s linear infinite`;
+
+        //append
+        parent.appendChild(shape);
+    }
+}
+
+
+
 //pages construction must be at the bottom of the java file
+
+createMovingBackgroung(loadBackground);
+createMovingBackgroung(mainBackground);
 
 chekBoxes();
 
