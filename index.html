@@ -58,7 +58,7 @@
             <nav class="navcontainer" id="navigationBar">
                 <ul>
                     <li><a href="#Page">CV</a></li>
-                    <li><a href="#git">GitHub Profile</a></li>
+                    <!--<li><a href="#git">GitHub Profile</a></li>-->
                     <li><a href="#ExamplePages">Examples</a></li>
 
                 </ul>
@@ -76,7 +76,7 @@
             <div id="cvStart" class="CVBody">
                 <!-- this will the core content of the vc -->
 
-                <div id="otherCourses" class="container">
+                <div class="container">
                     <!-- other courses -->
                     <div class="containerTitle">
                         About Me
@@ -93,7 +93,15 @@
                     </p>
 
                     <div class="containerTitle">
-                        Download CV below
+                        Golden Key International Honours Socity member
+                    </div>
+
+                    <a href="./webresours/proof.pdf" download="CV" class="Downloadable">
+                        <img src="./webresours/pdf.png" alt="CV" width="100" height="100" class="Downloadable">
+                    </a>
+
+                    <div class="containerTitle">
+                        Download CV below make a cv!!!!
                     </div>
 
                     <a href="./webresours/report.pdf" download="CV" class="Downloadable">
@@ -120,21 +128,6 @@
                     </div>
                     <div id="uniComplete" class="skillsBack">
 
-                    </div>
-
-
-                    <!-- In Progress -->
-                    <div class="containerTitle">
-                        In Progress
-                    </div>
-                    <div id="uniInProgress" class="skillsBack">
-                        <ul>
-                            <!-- list of other courses other courses -->
-                            <li>CMPG 321 ADVANCED DATABASES</li>
-                            <li>CMPG 322 DECISION SUPPORTS SYSTEMS 2</li>
-                            <li>CMPG 323 IT DEVELOPMENTS</li>
-                            <li>CMPG 324 OPERATING SYSTEMS</li>
-                        </ul>
                     </div>
 
                     <div class="containerTitle">
@@ -302,10 +295,8 @@
 
                 </div>
 
-                <div id="git"></div>
-
-                <div id="gitHub" class="container">
-                    <!-- software skills -->
+                <!-- <div id="gitHub" class="container">
+                     software skills 
                     <div class="containerTitle">
                         GitHub Profile
                     </div>
@@ -331,38 +322,100 @@
                             </div>
 
                         </div>
+                    </div>-->
+
+            </div>
+
+        </div>
+
+        <div id="ExamplePages" class="ExamplesContainer">
+            <!-- this will the eaxmpls demistration of pratical skills -->
+            <div class="Example ExampleContainer">
+                <div class="ExamplePageHead">Text move Example</div>
+
+                <div class="ExamplePageBody" onclick="event.stopPropagation()">
+
+                    <div id="example1" class="example1Page">
+
+                        <div class="loginContainer">
+
+                            <h1>Login</h1>
+
+                            <div class="textBoxContainer">
+                                <input type="text" name="" id="">
+                                <label for="">Email</label>
+                            </div>
+
+                            <div class="textBoxContainer">
+                                <input type="text" name="" id="">
+                                <label for="">Password</label>
+                            </div>
+
+                            <button class="btnExampl1">Login</button>
+
+                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-            <div id="ExamplePages" class="ExamplesContainer">
-                <!-- this will the eaxmpls demistration of pratical skills -->
-                <div class="Example ExampleContainer">
-                    <div class="ExamplePageHead">Text move Example</div>
+            <div class="Example ExampleContainer">
+                <div class="ExamplePageHead">Movie Page Example</div>
+                <div class="ExamplePageBody" onclick="event.stopPropagation()">
 
-                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
+                    <div id="example2" class="example2Page">
 
-                        <div id="example1" class="example1Page">
+                        <div id="headMovieExample" class="movieHead">
+                            <input type="text" name="movieSearch" id="movieSearch" class="movieSearch"
+                                placeholder="Search">
+                            <button id="movieSerchButton" class="movieBtn">&#9906</button>
+                        </div>
 
-                            <div class="loginContainer">
+                        <div id="bodyMovieExample" class="bodyMovieExample">
+                            <!-- all movies are placed inside the body-->
+                        </div>
 
-                                <h1>Login</h1>
+                    </div>
 
-                                <div class="textBoxContainer">
-                                    <input type="text" name="" id="">
-                                    <label for="">Email</label>
-                                </div>
+                </div>
+            </div>
 
-                                <div class="textBoxContainer">
-                                    <input type="text" name="" id="">
-                                    <label for="">Password</label>
-                                </div>
+            <div class="Example ExampleContainer">
+                <div class="ExamplePageHead">Theme change Example</div>
 
-                                <button class="btnExampl1">Login</button>
+                <div class="ExamplePageBody" onclick="event.stopPropagation()">
+
+                    <div id="example3" class="example3Page">
+
+                        <button class="themeToggel">Light Mode</button>
+
+                        <div class="clockContainer">
+                            <div class="clock">
+                                <div class="hand hour"></div>
+                                <div class="hand minute"></div>
+                                <div class="hand second"></div>
+                                <div class="clockCenter"></div>
+
+                                <div class="hourMark hourMainMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark hourMainMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark hourMainMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark hourMainMark"></div>
+                                <div class="hourMark"></div>
+                                <div class="hourMark"></div>
 
                             </div>
+
+                            <div class="clockTime"></div>
+
+                            <div class="clockDate"></div>
 
                         </div>
 
@@ -370,71 +423,9 @@
 
                 </div>
 
-                <div class="Example ExampleContainer">
-                    <div class="ExamplePageHead">Movie Page Example</div>
-                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
+            </div>
 
-                        <div id="example2" class="example2Page">
-
-                            <div id="headMovieExample" class="movieHead">
-                                <input type="text" name="movieSearch" id="movieSearch" class="movieSearch"
-                                    placeholder="Search">
-                                <button id="movieSerchButton" class="movieBtn">&#9906</button>
-                            </div>
-
-                            <div id="bodyMovieExample" class="bodyMovieExample">
-                                <!-- all movies are placed inside the body-->
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="Example ExampleContainer">
-                    <div class="ExamplePageHead">Theme change Example</div>
-
-                    <div class="ExamplePageBody" onclick="event.stopPropagation()">
-
-                        <div id="example3" class="example3Page">
-
-                            <button class="themeToggel">Light Mode</button>
-
-                            <div class="clockContainer">
-                                <div class="clock">
-                                    <div class="hand hour"></div>
-                                    <div class="hand minute"></div>
-                                    <div class="hand second"></div>
-                                    <div class="clockCenter"></div>
-
-                                    <div class="hourMark hourMainMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark hourMainMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark hourMainMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark hourMainMark"></div>
-                                    <div class="hourMark"></div>
-                                    <div class="hourMark"></div>
-
-                                </div>
-
-                                <div class="clockTime"></div>
-
-                                <div class="clockDate"></div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!--
+            <!--
                 <div class="Example ExampleContainer">
                     <div class="ExamplePageHead">Loading Pokemon Example</div>
                     <div class="ExamplePageBody" onclick="event.stopPropagation()">
@@ -478,9 +469,9 @@
                 </div>
                 -->
 
-            </div>
-
         </div>
+
+    </div>
 
     </div>
 

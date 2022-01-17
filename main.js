@@ -349,12 +349,17 @@ uniCompleteStats.appendChild(CreateStat('CMPG 311 DATABASES', 73));
 uniCompleteStats.appendChild(CreateStat('CMPG 312 DECISION SUPPORT SYSTEMS 1', 58));
 uniCompleteStats.appendChild(CreateStat('CMPG 313 ARTIFICIAL INTELLIGENCE', 67));
 uniCompleteStats.appendChild(CreateStat('CMPG 315 COMPUTER NETWORKS', 73));
+uniCompleteStats.appendChild(CreateStat('CMPG 321 ADVANCED DATABASES', 56));
+uniCompleteStats.appendChild(CreateStat('CMPG 322 DECISION SUPPORTS SYSTEMS 2', 76));
+uniCompleteStats.appendChild(CreateStat('CMPG 323 IT DEVELOPMENTS', 88));
+uniCompleteStats.appendChild(CreateStat('CMPG 324 OPERATING SYSTEMS', 67));
 uniCompleteStats.appendChild(CreateStat('MTHS 113 BASIC MATHEMATICAL TECHNIQUES', 56));
 uniCompleteStats.appendChild(CreateStat('MTHS 225 DISCRETE MATHEMATICS', 75));
 uniCompleteStats.appendChild(CreateStat('STTN 111 DESCRIPTIVE STATISTICS', 83));
 uniCompleteStats.appendChild(CreateStat('STTN 121 INTRO STAT INFERENCE I', 75));
 uniCompleteStats.appendChild(CreateStat('WVNS 211 UNDERSTANDING THE NATURAL WORLD', 86));
 uniCompleteStats.appendChild(CreateStat('WVNS 221 UNDERSTANDING THE NATURAL WORLD', 87));
+
 
 //disciplines
 
